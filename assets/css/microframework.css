@@ -65,8 +65,9 @@ body {
 }
 header {
   display: flex;
-  align-items: center; /* centraliza verticalmente */
-  justify-content: space-between;
+  align-items: center;   /* alinha verticalmente */
+  justify-content: flex-start; /* logo + slogan juntos à esquerda */
+  gap: 20px;             /* espaço entre logo e slogan */
   padding: 20px;
 }
 
@@ -82,7 +83,7 @@ header {
 .bem-logo {
   z-index: 1000;
   font-size: 3rem; /* desktop */
-  width: 300px;
+  width: 300px; /* controla tamanho da logo */
   margin-right: 10px; /* controla espaço entre logo e slogan */
 }
 @media (max-width: 768px) {
@@ -92,7 +93,7 @@ header {
 }
 
 .bem-logo img {
-  width: 300px; /* tamanho ajustado */
+  width: 300px; /* tamanho ajustado */  /* (250)controla tamanho da logo */
   height: auto; /* mantém proporção */
 }
 @media (max-width: 768px) {
@@ -103,13 +104,13 @@ header {
 }
 
 .bem-navbar__slogan {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.6rem;
-  font-weight: 600;
-  color: #333; /* cinza escuro mais suave que preto */
-  letter-spacing: 1px;
-  line-height: 1.4;
-  margin-left: 15px;
+  font-family: Arial, 'Poppins', sans-serif; /* fonte moderna */
+  font-size: 1.5rem;
+  font-weight: 600; /* semi-negrito */
+  color: #333; /* cinza escuro mais suave */
+  letter-spacing: 1px; /* espaçamento entre letras */
+  line-height: 1.4; /* altura da linha */
+  margin-left: 0; /* remove excesso de margem */
 }
 @media (max-width: 768px) {
   .bem-navbar__slogan {
@@ -178,6 +179,8 @@ ul{
   position: relative;
   transition: 0.3s;
 }
+
+
 
 
 
